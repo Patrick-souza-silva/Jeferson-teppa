@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import data from '../assets/data.json';
@@ -8,6 +8,16 @@ const Home = () => {
   const heroVideo = data.videos.find(v => v.toLowerCase().includes('principal')) || data.videos.find(v => v.toLowerCase().includes('primeira')) || data.videos[0];
 
   const bannerRef = useRef(null);
+  const videoRef = useRef(null);
+  
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.defaultMuted = true;
+      videoRef.current.muted = true;
+      videoRef.current.play().catch(e => console.log("Autoplay prevent fallback", e));
+    }
+  }, []);
+
   const { scrollYProgress } = useScroll({
     target: bannerRef,
     offset: ["start end", "end start"]
@@ -38,6 +48,7 @@ const Home = () => {
       }}>
         {heroVideo && (
           <video 
+            ref={videoRef}
             autoPlay 
             loop 
             muted 
