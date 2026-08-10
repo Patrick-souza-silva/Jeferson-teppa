@@ -1,0 +1,8 @@
+/media/LOGOS_Logotipo_Principal_BRANCO_JPG.jpg
+/media/LOGOS_Logotipo_Principal_BRANCO_MARCA_DÁGUA.png
+/media/LOGOS_Logotipo_Principal_BRANCO_PNG.png
+/media/LOGOS_Logotipo_Principal_NEGATIVO_MARCA_DÁGUA.png
+/media/LOGOS_Logotipo_Principal_NEGATIVO_PNG.png
+/media/LOGOS_Sublogotipo_BRANCO_JPG.jpg
+/media/LOGOS_Sublogotipo_BRANCO_MARCA_DÁGUA.png
+/media/LOGOS_Sublogotipo_BRANCO_PNG.png
