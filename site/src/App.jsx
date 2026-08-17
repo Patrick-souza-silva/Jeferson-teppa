@@ -10,6 +10,9 @@ import Projeto from './pages/Projeto';
 import Sobre from './pages/Sobre';
 import PoliticaPrivacidade from './pages/PoliticaPrivacidade';
 import Contato from './pages/Contato';
+import Servicos from './pages/Servicos';
+import Feedbacks from './pages/Feedbacks';
+import ScrollToTop from './components/ScrollToTop';
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -21,6 +24,8 @@ function AnimatedRoutes() {
         <Route path="/projetos" element={<Projetos />} />
         <Route path="/projeto/:id" element={<Projeto />} />
         <Route path="/sobre" element={<Sobre />} />
+        <Route path="/servicos" element={<Servicos />} />
+        <Route path="/feedbacks" element={<Feedbacks />} />
         <Route path="/politica-privacidade" element={<PoliticaPrivacidade />} />
         <Route path="/contato" element={<Contato />} />
       </Routes>
@@ -31,6 +36,7 @@ function AnimatedRoutes() {
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
         <Navbar />
         <main style={{ flex: 1 }}>
@@ -40,15 +46,16 @@ function App() {
         
         {/* Floating WhatsApp Button */}
         <a 
-          href="https://wa.me/554691397747" 
+          href="https://wa.me/5546991397747" 
           target="_blank" 
           rel="noopener noreferrer"
           style={{
             position: 'fixed',
             bottom: '30px',
             right: '30px',
-            backgroundColor: '#25D366',
-            color: '#fff',
+            backgroundColor: '#ffffff',
+            color: '#111111',
+            border: '1px solid rgba(0,0,0,0.1)',
             width: '60px',
             height: '60px',
             borderRadius: '50%',

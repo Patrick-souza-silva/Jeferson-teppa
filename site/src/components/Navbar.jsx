@@ -96,7 +96,13 @@ const Navbar = () => {
               <Link to="/projetos" style={linkStyles} className="nav-link">Projetos</Link>
             </li>
             <li>
+              <Link to="/feedbacks" style={linkStyles} className="nav-link">Clientes</Link>
+            </li>
+            <li>
               <Link to="/sobre" style={linkStyles} className="nav-link">Sobre</Link>
+            </li>
+            <li>
+              <Link to="/servicos" style={linkStyles} className="nav-link">Serviços</Link>
             </li>
             <li>
               <Link to="/contato" style={linkStyles} className="nav-link">Contato</Link>
@@ -149,6 +155,7 @@ const Navbar = () => {
               <Link to="/" style={mobileLinkStyles}>Home</Link>
               <Link to="/projetos" style={mobileLinkStyles}>Projetos</Link>
               <Link to="/sobre" style={mobileLinkStyles}>Sobre</Link>
+              <Link to="/servicos" style={mobileLinkStyles}>Serviços</Link>
               <Link to="/contato" style={mobileLinkStyles}>Contato</Link>
             </div>
             

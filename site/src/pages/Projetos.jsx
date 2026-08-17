@@ -64,6 +64,11 @@ const Projetos = () => {
                   transition: 'opacity 0.5s ease'
                 }} className="project-title">
                   {project.title}
+                  {project.subtitle && (
+                    <div style={{ fontSize: '0.8rem', letterSpacing: '1px', color: '#666', marginTop: '0.3rem', textTransform: 'none' }}>
+                      {project.subtitle}
+                    </div>
+                  )}
                 </h3>
                 <span style={{ color: '#888', fontSize: '0.8rem', letterSpacing: '2px' }}>
                   {String(idx + 1).padStart(2, '0')}

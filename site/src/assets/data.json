@@ -105,6 +105,44 @@
         "/media/ÁREA GOURMET_WAM_1669.jpg"
       ],
       "videos": []
+    },
+    {
+      "title": "CONEXÃO",
+      "subtitle": "Onde a matéria encontra a luz e o convívio.",
+      "description": "Integração como essência. A cozinha se estrutura a partir do encontro entre pedra natural, marcenaria escura e grandes planos de vidro, compondo uma atmosfera contemporânea, sofisticada e atemporal. A ilha central em pedra assume o protagonismo e estabelece uma relação direta entre funcionalidade e convivência, enquanto a marcenaria de acabamento profundo organiza o ambiente com precisão e elegância. A luz natural, conduzida pelos amplos vãos envidraçados, aproxima o interior do jardim e suaviza a materialidade mais densa da composição. Um espaço concebido para equilibrar presença e leveza, onde cada elemento revela a busca por proporção, permanência e excelência nos detalhes.",
+      "images": [
+        "/media/WAM_1764.jpg",
+        "/media/WAM_1921.jpg",
+        "/media/WAM_1964.jpg",
+        "/media/WAM_1974.jpg",
+        "/media/WAM_2377.jpg"
+      ],
+      "videos": [],
+      "folder": "COZINHA 02"
+    },
+    {
+      "title": "ENTRE MATÉRIA E LUZ",
+      "subtitle": "Contrastes precisos e uma atmosfera de sofisticação contemporânea.",
+      "description": "Um lavabo marcado pelo encontro entre a madeira natural, a pedra clara e a profundidade dos tons escuros. O teto iluminado cria uma atmosfera cenográfica, enquanto a marcenaria e a bancada monolítica conferem unidade e precisão ao conjunto. O espelho orgânico, valorizado pela iluminação indireta, acrescenta leveza às linhas rigorosas do ambiente. Um espaço de presença marcante, onde materiais, luz e detalhes foram cuidadosamente equilibrados para traduzir elegância e personalidade.",
+      "images": [
+        "/media/WAM_0889.jpg",
+        "/media/WAM_0894.jpg"
+      ],
+      "videos": [],
+      "folder": "LAVABO"
+    },
+    {
+      "title": "ESSÊNCIA",
+      "subtitle": "Delicadeza que acompanha novas fases",
+      "description": "Pensada para acompanhar a transformação e o crescimento de sua moradora, esta suíte traduz a delicadeza da adolescência em uma arquitetura contemporânea, acolhedora e atemporal. A composição entre tons suaves de lavanda, neutros e detalhes dourados cria uma atmosfera feminina e sofisticada, enquanto as formas orgânicas e a iluminação indireta acrescentam leveza e profundidade ao ambiente.\n\nO painel estofado assume o protagonismo da suíte, equilibrado pelo desenho ripado e pela marcenaria cuidadosamente planejada. A penteadeira, o espelho iluminado e os demais elementos foram integrados à composição para unir funcionalidade e personalidade, criando diferentes possibilidades para a rotina.\n\nO resultado é um espaço que vai além da estética: um ambiente pensado para acolher, expressar identidade e permanecer significativo ao longo das diferentes fases da vida.",
+      "images": [
+        "/media/WAM_0344.jpg",
+        "/media/WAM_0349.jpg",
+        "/media/WAM_0374.jpg",
+        "/media/WAM_0384.jpg"
+      ],
+      "videos": [],
+      "folder": "SUÍTE 03"
     }
   ],
   "sobre": {
@@ -137,5 +175,31 @@
   ],
   "videos": [
     "/media/Principal_comprimido.mp4"
+  ],
+  "feedbacks": [
+    {
+      "author": "MARLENE OLIVEIRA – SÃO PAULO – SP.",
+      "text": "Realizar uma obra é transformar sonhos em realidade, mas também lidar com decisões, desafios e imprevistos. Ter o Jeferson Teppa ao meu lado fez toda a diferença nessa jornada. Desde o início até a conclusão, seu acompanhamento foi constante. Sempre presente, disponível e atento, demonstrou conhecimento, competência e um genuíno compromisso com cada detalhe do projeto. Mais do que um excelente arquiteto, o Jeferson foi um parceiro em quem pude confiar, trazendo segurança, soluções e tranquilidade durante todo o processo. Sou muito grata por essa parceria e o recomendo de olhos fechados a quem busca excelência, comprometimento e um profissional que realmente esteja presente do início ao fim."
+    },
+    {
+      "author": "GIOVANE SCHAUSS – FRANCISCO BELTRÃO – PR.",
+      "text": "Entregar a materialização de um sonho nas mãos de um profissional exige muita confiança e segurança e foi exatamente isso que senti desde a primeira reunião com o Jeferson e sua equipe. Todo o trabalho foi conduzido de acordo com as necessidades que apresentei, sempre com atenção aos detalhes, a fim de transformar e valorizar ainda mais o meu espaço, do briefing à finalização. Também pude perceber o olhar minucioso do Jeferson na indicação de fornecedores e profissionais, buscando a excelência em cada escolha e um resultado alinhado ao que há de mais moderno e atual. A entrega superou minhas expectativas, e sou muito grato ao Jeferson e a toda a sua equipe por fazerem parte de um momento tão especial."
+    },
+    {
+      "author": "SABRINA MAIORANO – CAMPINAS – SP.",
+      "text": "Minha experiência com seu trabalho tem sido excelente, marcada por profissionalismo, criatividade e muita atenção aos detalhes. Mesmo à distância, sempre me senti acolhida e muito bem acompanhada, com disponibilidade e atenção em todas as etapas. Admiro especialmente a capacidade de compreender o que eu desejo, captar meu estilo e transformar minhas ideias em projetos elegantes, sofisticados e, ao mesmo tempo, muito pessoais. A flexibilidade nas revisões e a abertura para ajustes, sempre com muita atenção e cuidado, fizeram toda a diferença para mim. Estou muito feliz com os projetos realizados e com todo o suporte ao longo desse processo. Recomendo seu trabalho com muita confiança, pela excelência, bom gosto, elegância e pelo olhar diferenciado em cada detalhe."
+    },
+    {
+      "author": "ERIC BUASQUEVICZ – BARUERI – SP.",
+      "text": "Tivemos a oportunidade de conhecer o trabalho do Jeferson após várias reuniões com outros arquitetos e, desde a primeira apresentação, ficamos muito satisfeitos com a forma como ele conduziu tudo. Foi uma escolha que, depois de fecharmos o contrato, se mostrou ainda mais acertada. Desde o início, tudo fluiu de maneira muito genuína. O Jeferson conseguiu captar com muita sensibilidade nossos gostos, necessidades e desejos, transformando tudo isso em um projeto que amamos desde o primeiro momento. E o trabalho não parou na entrega do projeto. Durante toda a execução, sua prontidão, disponibilidade e acompanhamento foram impecáveis. Sempre presente, atento aos detalhes e disposto a ajudar, fez toda a diferença para que o resultado saísse exatamente como imaginávamos. Mais do que um projeto bonito, ele conseguiu entregar aquilo que realmente sonhávamos para nosso apto. Ficamos extremamente felizes com o resultado e somos muito gratos por todo o cuidado, dedicação e profissionalismo. Sem dúvida, foi uma das melhores escolhas que fizemos. O Jeferson realmente conseguiu transformar nossos sonhos em um projeto que hoje temos o prazer de chamar de nosso. Recomendo de olhos fechados!"
+    },
+    {
+      "author": "FERNANDA LUTHEK – BALNEÁRIO CAMBORIÚ – SC.",
+      "text": "Desde o primeiro contato com o Jeferson, me senti muito segura em deixar esse projeto nas mãos dele. Ele conseguiu entender exatamente o que eu queria, inclusive em detalhes que muitas vezes eu mesma não sabia explicar, e transformar tudo em um projeto que realmente tem a minha cara. Durante todo o processo, sempre foi muito atencioso, paciente e aberto a ouvir minhas ideias e fazer os ajustes necessários. Também gostei muito do cuidado nas escolhas de materiais, fornecedores e profissionais, porque isso trouxe ainda mais segurança para a execução. O resultado ficou ainda melhor do que eu imaginava. Hoje, olhando para o espaço pronto, consigo ver que cada detalhe foi pensado com muito cuidado e fez diferença no resultado final, sinto que estou em uma casa de verdade, feita para viver! Foi uma experiência muito especial e sou muito feliz por ter escolhido o Jeferson e sua equipe para fazer parte desse momento."
+    },
+    {
+      "author": "THAIS LOURENÇO – FRANCISCO BELTRÃO – PR.",
+      "text": "Nossa experiência com o Jeferson foi excelente, principalmente pela forma humana e cuidadosa como todo o projeto foi conduzido. Desde o primeiro contato houve uma preocupação em entender o que realmente fazia sentido para nós, pensando muito mais em nossa comodidade e bem-estar do que em criar algo apenas para impressionar. O projeto foi pensado dentro do padrão que buscávamos, sempre equilibrando qualidade, funcionalidade e aquilo que realmente combina com a gente. Percebemos a experiência por trás de cada escolha, ele sempre sugeriu aquilo que realmente conhece e acredita que vai funcionar. O projeto vai além do espaço físico, é pensando de fato como um sonho que confiamos no Jeferson para tornar realidade. Foi um trabalho feito com muita atenção aos detalhes, mas, principalmente, com atenção às pessoas. E isso fez toda a diferença no resultado."
+    }
   ]
 }

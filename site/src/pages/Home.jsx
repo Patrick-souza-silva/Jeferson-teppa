@@ -74,34 +74,35 @@ const Home = () => {
         <div style={{ 
           zIndex: 1, 
           textAlign: 'center', 
-          backgroundColor: 'rgba(0,0,0,0.4)', 
-          padding: '3rem 5rem', 
-          borderRadius: '2px', 
+          backgroundColor: 'rgba(0,0,0,0.5)', 
+          padding: '4rem 5rem', 
+          width: '100%',
           backdropFilter: 'blur(4px)',
-          border: '1px solid rgba(255,255,255,0.05)',
           boxShadow: '0 20px 40px rgba(0,0,0,0.3)'
         }}>
           <h1 style={{ 
             color: '#fff', 
             fontSize: 'clamp(2.5rem, 6vw, 5rem)', 
-            fontWeight: 400, 
-            letterSpacing: '10px', 
+            fontFamily: "var(--font-heading)",
+            fontWeight: 200, 
+            letterSpacing: '12px', 
             textTransform: 'uppercase', 
             marginBottom: '1.5rem',
-            textShadow: '0 4px 15px rgba(0,0,0,0.8)'
+            textShadow: '0 2px 10px rgba(0,0,0,0.3)'
           }}>
             Jeferson Teppa
           </h1>
           <p style={{ 
             color: '#fff', 
             fontSize: '1.2rem', 
+            fontFamily: "'Montserrat', sans-serif",
             letterSpacing: '6px', 
             textTransform: 'uppercase', 
             fontWeight: 300,
             textShadow: '0 2px 10px rgba(0,0,0,0.8)',
             opacity: 0.9
           }}>
-            Arquitetura de Essência
+            ARQUITETURA COM PROPÓSITO
           </p>
         </div>
       </section>
@@ -128,22 +129,22 @@ const Home = () => {
             <p style={{ fontSize: 'clamp(1.5rem, 3vw, 2.2rem)', fontWeight: 300, color: '#fff', marginBottom: '1rem', lineHeight: 1.4 }}>
               "Mais do que desenvolver projetos, tenho o privilégio de participar da realização de sonhos."
             </p>
-            <span style={{ fontSize: '0.8rem', letterSpacing: '4px', textTransform: 'uppercase', color: '#fff', marginBottom: '2.5rem', fontWeight: 500 }}>
+            <span style={{ fontSize: '0.85rem', letterSpacing: '6px', textTransform: 'uppercase', color: '#fff', marginBottom: '3rem', fontWeight: 200, fontFamily: 'var(--font-heading)' }}>
               JEFERSON TEPPA
             </span>
-            <Link to="/sobre" style={{
+            <Link to="/contato" style={{
               display: 'inline-block',
-              padding: '14px 40px',
-              backgroundColor: '#ffffff',
-              color: '#000000',
-              fontWeight: 500,
+              color: '#ffffff',
+              fontWeight: 300,
               textDecoration: 'none',
               textTransform: 'uppercase',
-              letterSpacing: '2px',
-              fontSize: '0.85rem',
-              transition: 'background-color 0.3s'
-            }} onMouseOver={e => e.target.style.backgroundColor = '#eeeeee'} onMouseOut={e => e.target.style.backgroundColor = '#ffffff'}>
-              SAIBA MAIS
+              letterSpacing: '4px',
+              fontSize: '0.8rem',
+              borderBottom: '1px solid rgba(255,255,255,0.4)',
+              paddingBottom: '6px',
+              transition: 'all 0.3s ease'
+            }} onMouseOver={e => { e.target.style.borderBottomColor = '#ffffff'; e.target.style.opacity = '0.8'; }} onMouseOut={e => { e.target.style.borderBottomColor = 'rgba(255,255,255,0.4)'; e.target.style.opacity = '1'; }}>
+              INICIE SEU PROJETO
             </Link>
           </motion.div>
 
@@ -162,55 +163,59 @@ const Home = () => {
         <h2 style={{ fontSize: '1.5rem', fontWeight: 200, marginBottom: '6rem', textAlign: 'center', letterSpacing: '8px', textTransform: 'uppercase', color: 'inherit' }}>
           Projetos Destaque
         </h2>
-        
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '8rem' }}>
-          {data.projects.slice(0, 3).map((project, idx) => (
-            <div key={idx} style={{ 
+         <div style={{ display: 'flex', flexDirection: 'column', gap: '8rem' }}>
+          {[0, 3, 5].map((projectIdx, loopIdx) => {
+            const project = data.projects[projectIdx];
+            return (
+            <div key={projectIdx} style={{ 
               display: 'flex', 
-              flexDirection: idx % 2 === 0 ? 'row' : 'row-reverse',
+              flexDirection: loopIdx % 2 === 0 ? 'row' : 'row-reverse',
               alignItems: 'center',
               gap: '4rem',
               padding: '0 5vw'
             }} className="editorial-row">
               
-              <Link to={`/projeto/${idx}`} style={{ flex: '1', display: 'block', overflow: 'hidden' }} className="project-editorial-img-wrapper">
+              <Link to={`/projeto/${projectIdx}`} style={{ flex: '1', display: 'block', overflow: 'hidden' }} className="project-editorial-img-wrapper">
                 <motion.img 
                   initial={{ opacity: 0, scale: 1.1 }}
                   whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true, margin: "-100px" }}
-                  transition={{ duration: 1.5, ease: "easeOut" }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 1.2 }}
                   src={project.images[0]} 
                   alt={project.title} 
-                  style={{
-                    width: '100%',
-                    aspectRatio: '4/5',
-                    objectFit: 'cover',
-                    transition: 'transform 1s ease'
-                  }}
-                  className="project-editorial-img"
+                  style={{ width: '100%', aspectRatio: '4/3', objectFit: 'cover' }} 
                 />
               </Link>
 
               <motion.div 
-                initial={{ opacity: 0, x: idx % 2 === 0 ? 50 : -50 }}
+                initial={{ opacity: 0, x: loopIdx % 2 === 0 ? 50 : -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 1, delay: 0.3 }}
-                style={{ flex: '1' }}
+                style={{ flex: '1', display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}
                 className="editorial-text"
               >
+                <span style={{ fontSize: '0.8rem', letterSpacing: '2px', color: '#888', marginBottom: '1rem' }}>
+                  {String(loopIdx + 1).padStart(2, '0')}
+                </span>
                 <h3 style={{
                   fontSize: 'clamp(2rem, 4vw, 3.5rem)',
-                  fontWeight: 200,
-                  letterSpacing: '2px',
+                  fontWeight: 300,
+                  letterSpacing: '8px',
                   textTransform: 'uppercase',
-                  marginBottom: '1.5rem',
+                  marginBottom: '0.5rem',
                   lineHeight: 1.1,
-                  color: 'inherit'
+                  color: 'inherit',
+                  fontFamily: "var(--font-heading)"
                 }}>
                   {project.title}
                 </h3>
-                <Link to={`/projeto/${idx}`} style={{ 
+                {project.subtitle && (
+                  <h4 style={{ fontSize: '1.2rem', fontWeight: 400, color: '#555', marginBottom: '2rem' }}>
+                    {project.subtitle}
+                  </h4>
+                )}
+                <Link to={`/projeto/${projectIdx}`} style={{ 
                   textTransform: 'uppercase', 
                   letterSpacing: '2px', 
                   fontSize: '0.8rem', 
@@ -223,7 +228,8 @@ const Home = () => {
                 </Link>
               </motion.div>
             </div>
-          ))}
+            );
+          })}
         </div>
         
         <div style={{ textAlign: 'center', marginTop: '8rem' }}>
@@ -277,6 +283,54 @@ const Home = () => {
                 );
               })}
             </div>
+          </div>
+        </section>
+      )}
+
+      {/* Feedbacks Section */}
+      {data.feedbacks && data.feedbacks.length > 0 && (
+        <section className="bg-light" style={{ padding: '8rem 5vw', backgroundColor: '#fafafa' }}>
+          <h2 style={{ fontSize: '1.5rem', fontWeight: 200, marginBottom: '6rem', textAlign: 'center', letterSpacing: '8px', textTransform: 'uppercase', color: 'inherit' }}>
+            O Que Dizem Nossos Clientes
+          </h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '3rem' }}>
+            {data.feedbacks.map((fb, idx) => (
+              <motion.div 
+                key={idx}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, delay: (idx % 3) * 0.1 }}
+                style={{
+                  backgroundColor: '#fff',
+                  padding: '3rem',
+                  boxShadow: '0 10px 30px rgba(0,0,0,0.03)',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  gap: '2rem',
+                  borderTop: '2px solid var(--color-accent)'
+                }}
+              >
+                <p style={{ 
+                  fontStyle: 'italic', 
+                  lineHeight: 1.8, 
+                  color: '#666',
+                  fontSize: '0.95rem',
+                  flexGrow: 1
+                }}>
+                  "{fb.text}"
+                </p>
+                <div style={{
+                  fontSize: '0.85rem',
+                  fontWeight: 600,
+                  letterSpacing: '1px',
+                  color: 'var(--color-accent)',
+                  textTransform: 'uppercase'
+                }}>
+                  — {fb.author}
+                </div>
+              </motion.div>
+            ))}
           </div>
         </section>
       )}

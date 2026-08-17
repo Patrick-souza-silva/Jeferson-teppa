@@ -76,7 +76,9 @@ const Projeto = () => {
             viewport={{ once: true }}
             style={{ backgroundColor: 'var(--color-bg-light)', padding: '4rem', maxWidth: '800px', margin: '0 auto 4rem', boxShadow: '0 20px 40px rgba(0,0,0,0.05)', lineHeight: 1.8, color: 'inherit' }}
           >
-            <p>{project.description}</p>
+            <h2 style={{ fontSize: '2rem', marginBottom: '0.5rem', fontFamily: "var(--font-heading)" }}>{project.title}</h2>
+            {project.subtitle && <h3 style={{ fontSize: '1.2rem', fontWeight: '500', marginBottom: '2rem', color: '#555' }}>{project.subtitle}</h3>}
+            <p style={{ whiteSpace: 'pre-line' }}>{project.description}</p>
           </motion.div>
         )}
 
