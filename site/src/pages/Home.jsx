@@ -164,7 +164,7 @@ const Home = () => {
           Projetos Destaque
         </h2>
          <div style={{ display: 'flex', flexDirection: 'column', gap: '8rem' }}>
-          {[0, 3, 5].map((projectIdx, loopIdx) => {
+          {[0, 1, 5].map((projectIdx, loopIdx) => {
             const project = data.projects[projectIdx];
             return (
             <div key={projectIdx} style={{ 
