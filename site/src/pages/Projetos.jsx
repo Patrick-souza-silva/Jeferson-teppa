@@ -24,7 +24,6 @@ const Projetos = () => {
 
       <div style={{
         display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fill, minmax(400px, 1fr))',
         gap: '4rem 2rem'
       }} className="projetos-grid">
         {data.projects.map((project, idx) => (
@@ -86,7 +85,31 @@ const Projetos = () => {
         .project-card:hover .project-title {
           opacity: 0.6;
         }
+        /* Último card sozinho na linha fica centralizado */
+        .projetos-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+        .projetos-grid > .project-card:last-child:nth-child(3n+1) {
+          grid-column: 2;
+        }
+        @media (max-width: 1328px) {
+          .projetos-grid {
+            grid-template-columns: repeat(2, 1fr);
+          }
+          .projetos-grid > .project-card:last-child:nth-child(3n+1) {
+            grid-column: auto;
+          }
+          .projetos-grid > .project-card:last-child:nth-child(2n+1) {
+            grid-column: 1 / -1;
+            justify-self: center;
+            width: calc((100% - 2rem) / 2);
+          }
+        }
         @media (max-width: 768px) {
+          .projetos-grid > .project-card:last-child:nth-child(2n+1) {
+            grid-column: auto;
+            width: 100%;
+          }
           .projetos-grid {
             grid-template-columns: 1fr !important;
             gap: 4rem !important;
